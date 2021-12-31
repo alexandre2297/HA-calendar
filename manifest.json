@@ -1,0 +1,12 @@
+{
+  "domain": "custom_calendar",
+  "name": "Custom calendar",
+  "documentation": "",
+  "dependencies": [],
+  "codeowners": [
+    "alexandre2297"
+  ],
+  "requirements": [],
+  "config_flow": true,
+  "version": "1.0.0"
+}

@@ -1,0 +1,40 @@
+add_event:
+    name: "Add event"
+    description: "Ajoute un évènement au calendrier"
+    target:
+        entity:
+            domain: calendar
+            integration: custom_calendar
+
+    fields:
+        event:
+            description: "Intitulé de l'évènement"
+            example: "Anniversaire maman"
+            required: true
+            default: "test"
+            selector:
+                text:
+        start:
+            description: "Date de début (YYYY-mm-dd)"
+            example: "2021-01-17"
+            required: true
+            selector:
+                text:
+
+        start_time:
+            description: "Heure de début"
+            example: "20:10:00"
+            selector:
+                time:
+
+        end:
+            description: "Date de fin (YYYY-mm-dd)"
+            example: "2021-01-17"
+            selector:
+                text:
+
+        end_time:
+            description: "Heure de fin"
+            example: "20:10:00"
+            selector:
+                time:
